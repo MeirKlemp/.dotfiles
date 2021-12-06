@@ -219,4 +219,4 @@ bar {
 
 exec lxsession
 exec picom
-exec_always nitrogen --set-tiled ~/Pictures/arch-desktop.png
+exec_always nitrogen --restore
