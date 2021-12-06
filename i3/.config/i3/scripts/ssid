@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# TODO: check what heppens if connected with a cable
+
+SSID=$(nmcli -g NAME connection show --active)
+
+if [[ ! $SSID ]] ; then
+	exit
+fi
+
+echo "$SSID" # full text
+echo "$SSID" # short text
+echo "#98C379" # color
