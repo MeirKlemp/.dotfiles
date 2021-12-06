@@ -181,11 +181,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $bg-color			#2F343F
-set $inactive-bg-color		#2F343F
-set $text-color			#F3F4F5
-set $inactive-text-color	#676E7D
-set $urgent-bg-color		#E53935
+# OneDark theme
+set $bg-color			#282C34
+set $inactive-bg-color		#282C34
+set $text-color			#ABB2BF
+set $inactive-text-color	#5C6370
+set $urgent-bg-color		#E06C75
 
 # window colors
 #			border			background		text			indicator
@@ -207,7 +208,7 @@ bar {
 	position top
 	colors {
 		background $bg-color
-		separator #757575
+		separator $text-color
 		#			border			background		text
 		focused_workspace	$bg-color		$bg-color		$text-color
 		inactive_workspace	$inactive_bg-color	$inactive-bg-color	$inactive-text-color
