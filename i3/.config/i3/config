@@ -217,6 +217,9 @@ bar {
 	}
 }
 
+# add hebrew layout
+exec setxkbmap -layout us,il -variant ,si1452-2 -option grp:win_space_toggle
+
 exec lxsession
 exec picom
 exec_always nitrogen --restore
