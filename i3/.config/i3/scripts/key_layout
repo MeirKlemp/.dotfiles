@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# TODO: print 'eng' when the layout is us and 'heb' when the layout is il.
+xkb-switch | cat
+xkb-switch -W | cat
