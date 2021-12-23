@@ -17,4 +17,13 @@ eval "$(starship init bash)"
 alias sudo=doas
 alias sudoedit="doas $EDITOR"
 
+# git shortcuts
+alias gs="git status"
+
+# replace cat with bat
+alias cat="bat --theme=OneHalfDark"
+
+# replace grep with ripgrep
+alias grep=ripgrep
+
 neofetch
