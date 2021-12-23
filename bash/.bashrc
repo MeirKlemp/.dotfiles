@@ -13,4 +13,8 @@ PS1='[\u@\h \W]\$ '
 # start starship prompt: https://starship.rs
 eval "$(starship init bash)"
 
+# replace sudo with doas
+alias sudo=doas
+alias sudoedit="doas $EDITOR"
+
 neofetch
