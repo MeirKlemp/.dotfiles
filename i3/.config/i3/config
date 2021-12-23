@@ -234,3 +234,7 @@ exec_always --no-startup-id nitrogen --restore
 
 # keybindings for i3lock
 bindsym $mod+x exec --no-startup-id i3lock -c 000000 -i ~/Pictures/pexels-simon-berger-1920x1080-blurred.png
+
+# keybindings for flameshot (snipping tool)
+bindsym Print exec --no-startup-id flameshot gui
+bindsym Shift+Print exec --no-startup-id flameshot full -c
