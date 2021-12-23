@@ -21,7 +21,8 @@ alias sudoedit="doas $EDITOR"
 alias gs="git status"
 
 # replace cat with bat
-alias cat="bat --theme=OneHalfDark"
+alias bat="bat --theme=OneHalfDark"
+alias cat=bat
 
 # replace grep with ripgrep
 alias grep=ripgrep
