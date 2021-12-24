@@ -1,3 +1,10 @@
+[init]
+	defaultBranch = main
+[user]
+	email = meirk251@outlook.com
+	name = Meir Klemfner
+[credential]
+	helper = cache
 
 [url "https://github.com/"]
 	insteadOf = gh:
