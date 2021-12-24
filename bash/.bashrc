@@ -24,6 +24,6 @@ alias gs="git status"
 alias bat="bat --theme=OneHalfDark"
 
 # replace grep with ripgrep
-alias grep=ripgrep
+alias grep=rg
 
 neofetch
