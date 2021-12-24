@@ -20,9 +20,8 @@ alias sudoedit="doas $EDITOR"
 # git shortcuts
 alias gs="git status"
 
-# replace cat with bat
+# bat config
 alias bat="bat --theme=OneHalfDark"
-alias cat=bat
 
 # replace grep with ripgrep
 alias grep=ripgrep
