@@ -6,17 +6,14 @@
 [credential]
 	helper = cache
 
-[url "https://github.com/"]
-	insteadOf = gh:
 [url "git@github.com:"]
+	insteadOf = gh:
 	pushInsteadOf = "gh:"
 
-[url "https://gitlab.com/"]
-	insteadOf = gl:
 [url "git@gitlab.com:"]
+	insteadOf = gl:
 	pushInsteadOf = "gl:"
 
-[url "https://aur.archlinux.org/"]
-	insteadOf = aur:
 [url "aur@aur.archlinux.org:"]
+	insteadOf = aur:
 	pushInsteadOf = "aur:"
