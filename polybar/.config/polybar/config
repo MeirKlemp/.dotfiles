@@ -161,7 +161,7 @@ format-connected = 直 <label-connected>
 format-connected-underline = ${colors.green}
 label-connected = %essid%
 
-format-disconnected = 睊
+format-disconnected = 睊 disconneced
 format-disconnected-underline = ${colors.alert}
 
 [module/eth]
