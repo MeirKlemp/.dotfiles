@@ -23,7 +23,7 @@ alias gs="git status"
 # bat config
 alias bat="bat --theme=OneHalfDark"
 
-# replace grep with ripgrep
-alias grep=rg
+# add colors to grep
+alias grep="grep --color=auto"
 
 neofetch
