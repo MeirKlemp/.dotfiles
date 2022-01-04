@@ -53,7 +53,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec "rofi -modi drun,run -show drun"
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
@@ -70,9 +70,9 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
+bindsym $mod+Left  focus left
+bindsym $mod+Down  focus down
+bindsym $mod+Up    focus up
 bindsym $mod+Right focus right
 
 # move focused window
@@ -82,10 +82,22 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Left  move left
+bindsym $mod+Shift+Down  move down
+bindsym $mod+Shift+Up    move up
 bindsym $mod+Shift+Right move right
+
+# move current workspace between monitors
+bindsym $mod+Control+h move workspace to output left
+bindsym $mod+Control+j move workspace to output down
+bindsym $mod+Control+k move workspace to output up
+bindsym $mod+Control+l move workspace to output right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Control+Left  move workspace to output left
+bindsym $mod+Control+Down  move workspace to output down
+bindsym $mod+Control+Up    move workspace to output up
+bindsym $mod+Control+Right move workspace to output right
 
 # split in horizontal orientation
 bindsym $mod+c split h
@@ -185,19 +197,19 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # OneDark theme
-set $bg-color			#282C34
+set $bg-color			    #282C34
 set $inactive-bg-color		#282C34
-set $text-color			#ABB2BF
+set $text-color			    #ABB2BF
 set $inactive-text-color	#5C6370
 set $urgent-bg-color		#E06C75
 set $focused-border-color	#E06C75
 
 # window colors
-#			border			background		text			indicator
-client.focused		$bg-color		$bg-color		$text-color		$bg-color
-client.unfocused	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	$inactive-bg-color
+#			            border			    background		    text			        indicator
+client.focused		    $bg-color		    $bg-color		    $text-color		        $bg-color
+client.unfocused	    $inactive-bg-color	$inactive-bg-color	$inactive-text-color	$inactive-bg-color
 client.focused_inactive	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	$inactive-bg-color
-client.urgent		$urget-bg-color		$urget-bg-color		$text-color		$bg-color
+client.urgent		    $urget-bg-color		$urget-bg-color		$text-color		        $bg-color
 
 default_border pixel
 default_floating_border pixel
