@@ -5,6 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Add local directories to PATH
+export PATH=$PATH:~/.local/bin
+
 export EDITOR=vim
 
 alias ls='ls --color=auto'
