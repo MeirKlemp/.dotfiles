@@ -36,11 +36,11 @@ cyan = #56b6c2
 white = #828997
 
 [bar/laptop]
-;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 35
 radius = 0.0
 fixed-center = false
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -48,7 +48,7 @@ foreground = ${colors.foreground}
 line-size = 5
 line-color = ${colors.primary}
 
-border-size = 5
+border-size = 0
 border-color = #00000000
 
 padding-left = 1
@@ -60,9 +60,9 @@ module-margin-right = 1
 font-0 = FiraCode Nerd Font:pixelsize=15;1
 font-1 = FreeSans:pixelsize=15;1
 
-modules-left = arch i3 xwindow
+modules-left = powermenu i3 xwindow
 modules-center = 
-modules-right = memory cpu xkeyboard backlight pulseaudio bluetooth wlan eth battery date powermenu
+modules-right = xkeyboard pulseaudio bluetooth wlan eth battery date
 
 tray-position = right
 tray-padding = 2
@@ -279,10 +279,10 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
-label-open-foreground = ${colors.secondary}
+label-open = 
+label-open-foreground = ${colors.blue}
 label-close =  cancel
-label-close-foreground = ${colors.secondary}
+label-close-foreground = ${colors.blue}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
@@ -303,15 +303,10 @@ menu-2-0-exec = menu-open-0
 menu-2-1 = reboot
 menu-2-1-exec = reboot
 
-menu-3-0 = power off
-menu-3-0-exec = poweroff
-menu-3-1 = cancel
-menu-3-1-exec = menu-open-0
-
-[module/arch]
-type = custom/text
-content = 
-content-foreground = ${colors.blue}
+menu-3-0 = cancel
+menu-3-0-exec = menu-open-0
+menu-3-1 = power off
+menu-3-1-exec = poweroff
 
 [module/bluetooth]
 type = custom/script
