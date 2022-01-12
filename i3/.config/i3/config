@@ -245,6 +245,9 @@ exec --no-startup-id setxkbmap -layout us,il -variant ,si1452-2 -option grp:win_
 exec --no-startup-id lxsession
 exec --no-startup-id picom -f
 
+# clipboard manager
+exec --no-startup-id xfce4-clipman
+
 # display wallpaper
 exec_always --no-startup-id nitrogen --restore
 
