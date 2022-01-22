@@ -8,6 +8,8 @@
 # Add local directories to PATH
 export PATH=$PATH:~/.local/bin
 
+alias em="emacsclient -c -a=\"\""
+
 export EDITOR=vim
 
 alias ls='ls --color=auto'
@@ -19,6 +21,8 @@ eval "$(starship init bash)"
 # replace sudo with doas
 alias sudo=doas
 alias sudoedit="doas $EDITOR"
+
+alias update="yay -Syu"
 
 # git shortcuts
 alias gs="git status"
