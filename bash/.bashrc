@@ -10,7 +10,7 @@ export PATH=$PATH:~/.local/bin
 
 alias em="emacsclient -c -a=\"\""
 
-export EDITOR=vim
+export EDITOR=nvim
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
