@@ -212,7 +212,6 @@ click-right = pavucontrol
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 98
 
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = ${colors.yellow}
