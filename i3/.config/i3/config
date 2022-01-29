@@ -196,6 +196,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# allow input keys with i3 keybindings
+mode "input" {
+    bindsym $mod+Escape mode "default"
+}
+
+bindsym $mod+i mode "input"
+
 # OneDark theme
 set $bg-color			    #282C34
 set $inactive-bg-color		#282C34
