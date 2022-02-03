@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+xkb-switch -s us
+
+i3lock -c 000000 -i ~/Pictures/pexels-simon-berger-1920x1080-blurred.png
+
