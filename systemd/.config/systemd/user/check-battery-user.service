@@ -1,0 +1,5 @@
+[Unit]
+Description=check-battery
+
+[Service]
+ExecStart=/home/meir/.config/scripts/check_battery.sh
