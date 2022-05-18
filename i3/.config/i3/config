@@ -245,7 +245,7 @@ title_align center
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # add hebrew layout
-exec --no-startup-id setxkbmap -layout us,il -variant ,si1452-2 -option grp:win_space_toggle
+exec --no-startup-id setxkbmap -layout us,il -option grp:win_space_toggle
 
 exec --no-startup-id lxsession
 exec --no-startup-id picom -f
