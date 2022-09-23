@@ -204,19 +204,19 @@ mode "input" {
 bindsym $mod+i mode "input"
 
 # OneDark theme
-set $bg-color			    #282C34
-set $inactive-bg-color		#282C34
-set $text-color			    #ABB2BF
-set $inactive-text-color	#5C6370
-set $urgent-bg-color		#E06C75
-set $focused-border-color	#E06C75
+set $bg-color               #282C34
+set $inactive-bg-color      #282C34
+set $text-color             #ABB2BF
+set $inactive-text-color    #5C6370
+set $urgent-bg-color        #E06C75
+set $focused-border-color   #E06C75
 
 # window colors
-#			            border			        background		    text			        indicator
-client.focused		    $bg-color               $bg-color		    $text-color		        $bg-color
-client.unfocused	    $inactive-bg-color	    $inactive-bg-color	$inactive-text-color	$inactive-bg-color
-client.focused_inactive	$inactive-bg-color	    $inactive-bg-color	$inactive-text-color	$inactive-bg-color
-client.urgent		    $urgent-bg-color		$urgent-bg-color	$text-color		        $bg-color
+#                       border                  background          text                    indicator
+client.focused          $bg-color               $bg-color           $text-color             $bg-color
+client.unfocused        $inactive-bg-color      $inactive-bg-color  $inactive-text-color    $inactive-bg-color
+client.focused_inactive $inactive-bg-color      $inactive-bg-color  $inactive-text-color    $inactive-bg-color
+client.urgent           $urgent-bg-color        $urgent-bg-color    $text-color             $bg-color
 
 default_border pixel
 default_floating_border pixel
@@ -229,16 +229,16 @@ title_align center
 # finds out, if available)
 # bar {
 #         status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
-# 	position top
-# 	colors {
-# 		background $bg-color
-# 		separator $text-color
-# 		#			border			background		text
-# 		focused_workspace	$bg-color		$bg-color		$text-color
-# 		active_workspace	$inactive-bg-color	$inactive-bg-color	$inactive-text-color
-# 		inactive_workspace	$inactive-bg-color	$inactive-bg-color	$inactive-text-color
-# 		urgent_workspace	$urgent-bg-color	$urgent-bg-color	$text-color
-# 	}
+#   position top
+#   colors {
+#       background $bg-color
+#       separator $text-color
+#       #           border          background      text
+#       focused_workspace   $bg-color       $bg-color       $text-color
+#       active_workspace    $inactive-bg-color  $inactive-bg-color  $inactive-text-color
+#       inactive_workspace  $inactive-bg-color  $inactive-bg-color  $inactive-text-color
+#       urgent_workspace    $urgent-bg-color    $urgent-bg-color    $text-color
+#   }
 # }
 
 # polybar
