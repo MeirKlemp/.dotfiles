@@ -22,7 +22,7 @@ eval "$(starship init bash)"
 alias sudo=doas
 alias sudoedit="doas $EDITOR"
 
-alias update="yay -Syu"
+alias update="yay -Syu && yay -Sc && systemctl --failed"
 
 # git shortcuts
 alias gs="git status"
