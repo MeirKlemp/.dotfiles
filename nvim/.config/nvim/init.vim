@@ -3,10 +3,18 @@ set number
 set relativenumber
 
 " indentation
-set smartindent
-set expandtab
-set tabstop=4
-set shiftwidth=4
+function! SetSpacesIndentation(numspaces)
+    if a:numspaces =~ '\D'
+        echoerr "Expected to get a number of spaces"
+        return
+    endif
+    set smartindent
+    set expandtab
+    execute "set tabstop=" . a:numspaces
+    execute "set shiftwidth=" . a:numspaces
+endfunction
+command! -nargs=1 Spaces call SetSpacesIndentation(<args>)
+Spaces 4
 
 " buffers
 set hidden
